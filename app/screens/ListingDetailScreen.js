@@ -5,15 +5,19 @@ import colors from "../config/colors";
 import ListItem from "../components/ListItem";
 
 function ListingDetailScreen() {
+  let imgid =
+    "https://avatars2.githubusercontent.com/u/" +
+    Math.floor(Math.random() * 1000) +   
+    "?s=360";
   return (
     <View style={styles.container}>
       <Image style={styles.image} source={require("../assets/jacket.jpg")} />
       <AppText style={styles.title}>Red Jacket for sale</AppText>
       <AppText style={styles.price}>$100</AppText>
       <ListItem
-        title="Mosh Hamdeni"
+        title="The Regular Guy"
         subTitle="5 listings"
-        image={require("../assets/mosh.jpg")}
+        image={{ uri: imgid }}
       />
     </View>
   );

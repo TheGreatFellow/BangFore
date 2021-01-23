@@ -10,7 +10,7 @@ function WelcomeScreen() {
     >
       <View style={styles.logoContainer}>
         <Image source={require("../assets/logo-red.png")} style={styles.logo} />
-        <Text style={styles.tagline}>Sup Ma Niggas</Text>
+        <Text style={styles.tagline}>Sup! Welcome Back</Text>
       </View>
       <AppButton title="Login" />
       <AppButton title="Register" color="secondary" />
