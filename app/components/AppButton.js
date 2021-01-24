@@ -4,11 +4,16 @@ import colors from "../config/colors";
 
 function AppButton({ title, onPress, color = "primary" }) {
   return (
-    <TouchableNativeFeedback onPress={onPress}>
-      <View style={[styles.button, { backgroundColor: colors[color] }]}>
-        <Text style={styles.title}>{title}</Text>
-      </View>
-    </TouchableNativeFeedback>
+    <View style={[styles.buttonContainer]}>
+      <TouchableNativeFeedback
+        onPress={onPress}
+        // background={TouchableNativeFeedback.Ripple("")}
+      >
+        <View style={[styles.button, { backgroundColor: colors[color] }]}>
+          <Text style={styles.title}>{title}</Text>
+        </View>
+      </TouchableNativeFeedback>
+    </View>
   );
 }
 
@@ -16,11 +21,19 @@ const styles = StyleSheet.create({
   button: {
     borderRadius: 25,
     backgroundColor: colors.primary,
-    width: "90%",
+    width: "100%",
     justifyContent: "center",
     alignItems: "center",
     height: 48,
+  },
+  buttonContainer: {
+    borderRadius: 25,
+    width: "90%",
+    height: 48,
     margin: 10,
+    justifyContent: "center",
+    alignItems: "center",
+    overflow: "hidden", //this is important for the ripple not to flow.
   },
   title: {
     color: colors.white,
