@@ -5,14 +5,10 @@ import {
   useDeviceOrientation,
 } from "@react-native-community/hooks";
 // @ts-ignore
-import Screen from "./app/components/Screen";
-import AppTextInput from "./app/components/AppTextInput";
-import Component0 from "./Component0";
-import WelcomeScreen from "./app/screens/WelcomeScreen";
-import ListingDetailScreen from "./app/screens/ListingDetailScreen";
+import MessagesScreen from "./app/screens/MessagesScreen";
 let x = 1;
 export default function App() {
-  return <WelcomeScreen />;
+  return <MessagesScreen />;
 }
 
 const styles = StyleSheet.create({

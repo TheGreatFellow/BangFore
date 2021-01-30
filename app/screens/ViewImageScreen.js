@@ -13,10 +13,14 @@ function ViewImageScreen() {
   return (
     <View style={styles.container}>
       <View style={styles.closeIcons}>
-        <MaterialCommunityIcons name="close" size={35} color="white" />
+        <MaterialCommunityIcons name="close" size={35} color={colors.primary} />
       </View>
       <View style={styles.deleteIcons}>
-        <MaterialCommunityIcons name="delete" size={35} color="white" />
+        <MaterialCommunityIcons
+          name="delete"
+          size={35}
+          color={colors.secondary}
+        />
       </View>
       <Image
         style={styles.imgcon}
@@ -36,12 +40,13 @@ const styles = StyleSheet.create({
     position: "absolute",
     // backgroundColor: colors.primary,
     top: Platform.OS === "android" ? StatusBar.currentHeight + 10 : 0,
-    left: 5,
+    left: 10,
   },
   deleteIcons: {
     position: "absolute",
     top: Platform.OS === "android" ? StatusBar.currentHeight + 10 : 0,
-    right: 30,
+    // backgroundColor: colors.secondary,
+    right: 15,
   },
   imgcon: {
     width: "100%",

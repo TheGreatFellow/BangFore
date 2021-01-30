@@ -7,7 +7,7 @@ import ListItem from "../components/ListItem";
 function ListingDetailScreen() {
   let imgid =
     "https://avatars2.githubusercontent.com/u/" +
-    Math.floor(Math.random() * 1000) +   
+    Math.floor(Math.random() * 1000) +
     "?s=360";
   return (
     <View style={styles.container}>
@@ -36,13 +36,13 @@ const styles = StyleSheet.create({
   title: {
     color: colors.black,
     fontSize: 19,
-    margin: 10,
+    margin: 15,
     fontWeight: "bold",
   },
   price: {
     color: colors.secondary,
-    marginHorizontal: 10,
-    marginBottom: 30,
+    marginHorizontal: 15,
+    marginBottom: 20,
     fontSize: 18,
     opacity: 0.7,
     fontWeight: "bold",

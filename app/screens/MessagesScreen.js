@@ -5,18 +5,25 @@ import Screen from "../components/Screen";
 import ListItemSeparator from "../components/ListItemSeparator";
 import colors from "../config/colors";
 import ListItemDeleteAction from "../components/ListItemDeleteAction";
+const imgid = () => {
+  return (
+    "https://avatars2.githubusercontent.com/u/" +
+    Math.floor(Math.random() * 1000) +
+    "?s=360"
+  );
+};
 const intialMessages = [
   {
     id: 1,
     title: "T1",
     description: "D1",
-    image: require("../assets/mosh.jpg"),
+    image: { uri: imgid() },
   },
   {
     id: 2,
     title: "T2",
     description: "D2",
-    image: require("../assets/mosh.jpg"),
+    image: { uri: imgid() },
   },
 ];
 function MessagesScreen() {
@@ -51,7 +58,7 @@ function MessagesScreen() {
               id: 2,
               title: "T2",
               description: "D2",
-              image: require("../assets/mosh.jpg"),
+              image: { uri: imgid() },
             },
           ])
         }
