@@ -1,14 +1,14 @@
 import React, { useState } from "react";
-import { StyleSheet, Text, View, TextInput } from "react-native";
+import { StyleSheet } from "react-native";
 import {
   useDimensions,
   useDeviceOrientation,
 } from "@react-native-community/hooks";
-// @ts-ignore
-import MessagesScreen from "./app/screens/MessagesScreen";
-let x = 1;
+
+import LoginScreen from "./app/screens/LoginScreen";
+
 export default function App() {
-  return <MessagesScreen />;
+  return <LoginScreen />;
 }
 
 const styles = StyleSheet.create({

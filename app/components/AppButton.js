@@ -27,11 +27,12 @@ const styles = StyleSheet.create({
   },
   buttonContainer: {
     borderRadius: 25,
-    width: "90%",
+    width: "100%",
     height: 48,
-    margin: 10,
+    marginBottom: 20,
     justifyContent: "center",
     alignItems: "center",
+    // alignSelf: "center",
     overflow: "hidden", //this is important for the ripple not to flow.
   },
   title: {

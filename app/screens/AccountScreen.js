@@ -28,8 +28,8 @@ function AccountScreen() {
     <Screen style={styles.screen}>
       <View style={styles.container}>
         <ListItem
-          title="Mosh"
-          subTitle="programmingwithmosh@gmail.com"
+          title="The Random Guy"
+          subTitle="reactnative@dev.com"
           image={require("../assets/mosh.jpg")}
         />
       </View>

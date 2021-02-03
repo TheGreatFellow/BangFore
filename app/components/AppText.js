@@ -5,6 +5,8 @@ function AppText({ children, style }) {
   return <Text style={[styles.text, style]}>{children}</Text>;
 }
 
+//Another way to use different styles for diff platforms
+
 const styles = StyleSheet.create({
   text: {
     ...Platform.select({
